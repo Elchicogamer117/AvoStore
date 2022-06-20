@@ -1,0 +1,32 @@
+{
+  "name": "avostore",
+  "version": "1.0.0",
+  "description": "Avocado store using Next JS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elchicogamer117/AvoStore.git"
+  },
+  "keywords": [
+    "NextJS",
+    "ReactJS",
+    "TypeScript",
+    "Node"
+  ],
+  "author": "Elchicogamer117 <cfloresm1604@alumno.ipn.mx>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elchicogamer117/AvoStore/issues"
+  },
+  "homepage": "https://github.com/Elchicogamer117/AvoStore#readme",
+  "dependencies": {
+    "next": "^12.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
