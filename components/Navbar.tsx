@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
       <nav>
-        <ul>
+        <ul className='links'>
           <Link href='/'>
             <a>Home |</a>
           </Link>
@@ -14,6 +14,11 @@ const Navbar = () => {
           </Link>
         </ul>
       </nav>
+      <style jsx> {`
+        .links {
+          background: #FFFFFF;
+        }
+      `} </style>
     </div>
   )
 }

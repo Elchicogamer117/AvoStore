@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import Navbar from './Navbar';
+import styles from './layout.module.css'
 
 interface Props {
     children: ReactNode;
@@ -7,7 +8,7 @@ interface Props {
 
 const Layout = ({children}: Props) => {
     return(
-        <div>
+        <div className={styles.container} >
             <Navbar />
             {children}
             <footer>soy el pie de pagina</footer>
