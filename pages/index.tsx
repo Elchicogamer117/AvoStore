@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Nabvar from '../components/Navbar/Nabvar'
+import Nabvar from '../components/Navbar'
 
 const Home = () => {
   const [productList, setProductList] = useState<TProduct[]>([])
@@ -13,7 +13,6 @@ const Home = () => {
   
   return (
     <section>
-      <Nabvar />
       {productList.map((product) => (
         <ul>{product.name}</ul>
       ))}
