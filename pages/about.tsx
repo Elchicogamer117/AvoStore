@@ -1,5 +1,4 @@
 import React from 'react'
-import Nabvar from '../components/Navbar'
 
 const About = () => {
   return (
