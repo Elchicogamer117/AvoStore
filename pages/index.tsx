@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Nabvar from '../components/Navbar/Nabvar'
 
 const Home = () => {
+  const [productList, setProductList] = useState<TProduct[]>([])
+
+  useEffect(() => {
+    window.fetch('api/avo/')
+      .then(res => res.json())
+      .then(({ data, length }) => setProductList(data))
+      .catch(error => console.error(error))
+  },[])
+  
   return (
-    <div>
+    <section>
       <Nabvar />
-      <h1> Hi explorer 🖖 </h1>
-      <h2> How are you?</h2>
-    </div>
+      {productList.map((product) => (
+        <ul>{product.name}</ul>
+      ))}
+    </section>
   )
 }
 
